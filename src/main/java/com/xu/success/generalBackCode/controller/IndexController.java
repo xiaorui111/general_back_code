@@ -38,7 +38,7 @@ public class IndexController extends BaseController {
 
 	@RequestMapping("/index")
 	public ModelAndView index() {
-		return view("test");
+		return view("base/index");
 	}
 
 }
