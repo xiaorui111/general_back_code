@@ -2,4 +2,4 @@
 	pageEncoding="UTF-8"%>
 
 
-<div>这是中间区域</div>
+<div>这是中间</div>
