@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd 
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/mvc
+		    http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+	default-lazy-init="true">
+
+	<!-- 静态资源访问 -->
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler />
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+
+	<mvc:interceptors>
+		<!-- 参数拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/test/**" />
+			<bean class="com.xu.success.generalBackCode.interceptor.CommonInterceptor"></bean>
+		</mvc:interceptor>
+
+	</mvc:interceptors>
+
+
+
+</beans>
