@@ -33,6 +33,25 @@ html, body {
 	line-height: 50px;
 }
 
+#divTitleMenu {
+	background: yellow;
+	height: 38px;
+}
+
+#divTitleMenu  ul {
+	list-style: none;
+	margin: 0;
+}
+
+#divTitleMenu  ul li {
+	float: right;
+	font-size: 14px;
+	margin-right: 10px;
+	border-right: 1px solid rgb(233, 233, 233);
+	cursor: pointer;
+	padding: 10px;
+}
+
 #footerDiv {
 	height: 40px;
 	text-align: center;
@@ -50,7 +69,21 @@ html, body {
 
 .accordionDivChildId {
 	overflow: auto;
-	padding: 10px;
+	padding: 3px;
+}
+
+.accordionDivChildId ul {
+	list-style: none;
+	margin: 1px;
+	padding: 3px;
+	line-height: 30px;
+	text-indent: 20px;
+	color: #808080;
+}
+
+.accordionDivChildId ul li {
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
 }
 </style>
 </head>
@@ -58,6 +91,14 @@ html, body {
 	<!-- ===========顶部区域开始=============== -->
 	<div id="northDiv" data-options="region:'north'">
 		<div id="divTitleLogo">管理平台</div>
+		<div id="divTitleMenu">
+			<ul>
+				<li>用户管理</li>
+				<li>用户管理</li>
+				<li>用户管理</li>
+				<li>用户管理</li>
+			</ul>
+		</div>
 	</div>
 	<!-- ===========顶部区域结束=============== -->
 
@@ -65,9 +106,24 @@ html, body {
 	<div data-options="region:'west'" title="功能列表" style="width: 200px;">
 
 		<div id="fatherAccordionDivId" class="easyui-accordion" style="width: 99%;">
-			<div class="accordionDivChildId" title="用户管理">添加用户</div>
-			<div class="accordionDivChildId" title="公告管理">添加公告</div>
-			<div class="accordionDivChildId" title="新闻管理">添加新闻</div>
+			<div class="accordionDivChildId" title="用户管理">
+				<ul>
+					<li>添加用户</li>
+					<li>用户列表</li>
+				</ul>
+			</div>
+			<div class="accordionDivChildId" title="公告管理">
+				<ul>
+					<li>添加公告</li>
+					<li>公告列表</li>
+				</ul>
+			</div>
+			<div class="accordionDivChildId" title="新闻管理">
+				<ul>
+					<li>添加新闻</li>
+					<li>新闻列表</li>
+				</ul>
+			</div>
 		</div>
 
 	</div>
