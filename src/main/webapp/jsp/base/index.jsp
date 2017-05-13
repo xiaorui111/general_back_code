@@ -76,6 +76,7 @@ html, body {
 	<!-- ===========中间区域开始=============== -->
 	<div data-options="region:'center'">
 		<div id="centerTabDiv" class="easyui-tabs"></div>
+
 	</div>
 	<!-- ===========中间区域结束=============== -->
 
