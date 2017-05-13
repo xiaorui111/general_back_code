@@ -24,18 +24,88 @@ html, body {
 	margin: 0px;
 	padding: 0px
 }
+
+#northDiv {
+	background: url("resources/img/index_top_bg.gif");
+	height: 80px;
+}
+
+#divTitleLogo {
+	font-size: 22px;
+	color: green;
+	/* 	background-color: red; */
+	text-indent: 30px;
+	height: 40px;
+	line-height: 50px;
+}
+
+#footerDiv {
+	height: 40px;
+	text-align: center;
+}
+
+#centerTabDiv {
+	width: 100%;
+	height: 250px
+}
+
+#fatherAccordionDivId {
+	padding: 1px;
+	margin-top: 2px;
+}
+
+.accordionDivChildId {
+	overflow: auto;
+	padding: 10px;
+}
 </style>
 </head>
 <body class="easyui-layout">
-	<div data-options="region:'north',href:'jsp/base/top.jsp'"
-		style="height: 100px"></div>
-	<div
-		data-options="region:'south',split:true,href:'jsp/base/footer.jsp'"
-		style="height: 80px;"></div>
-	<div data-options="region:'west',split:true,href:'jsp/base/left.jsp'"
-		title="West" style="width: 250px;"></div>
-	<div
-		data-options="region:'center',title:'Main Title',href:'jsp/base/center.jsp'">
+	<!-- ===========顶部区域开始=============== -->
+	<div id="northDiv" data-options="region:'north'">
+		<div id="divTitleLogo">管理平台</div>
 	</div>
+	<!-- ===========顶部区域结束=============== -->
+
+	<!-- ===========左面区域开始=============== -->
+	<div data-options="region:'west'" title="功能列表" style="width: 200px;">
+
+		<div id="fatherAccordionDivId" class="easyui-accordion"
+			style="width: 99%;">
+			<div class="accordionDivChildId" title="用户管理">添加用户</div>
+			<div class="accordionDivChildId" title="公告管理">添加公告</div>
+			<div class="accordionDivChildId" title="新闻管理">添加新闻</div>
+		</div>
+
+	</div>
+	<!-- ===========左面区域结束=============== -->
+
+	<!-- ===========中间区域开始=============== -->
+	<div data-options="region:'center'">
+		<div id="centerTabDiv" class="easyui-tabs"></div>
+	</div>
+	<!-- ===========中间区域结束=============== -->
+
+	<!-- ===========底部区域开始=============== -->
+	<div id="footerDiv" data-options="region:'south'">
+		<br>版权所有&copy;忘言科技有限公司
+	</div>
+	<!-- ===========底部区域结束=============== -->
 </body>
+
+<script type="text/javascript">
+	$(function() {
+		$('#centerTabDiv').tabs('add', {
+			title : '首页',
+			content : '主页',
+			closable : true,
+			tools : [ {
+				iconCls : 'icon-mini-refresh',
+				handler : function() {
+					alert('refresh');
+				}
+			} ]
+		});
+	});
+</script>
 </html>
