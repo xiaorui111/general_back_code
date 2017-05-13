@@ -1,23 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>企业通用管理平台</title>
 <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript"
-	src="resources/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript"
-	src="resources/easyui/plugins/jquery.form.js"></script>
-<script type="text/javascript"
-	src="resources/easyui/locale/easyui-lang-zh_CN.js"></script>
-<link rel='stylesheet'
-	href='resources/easyui/themes/bootstrap/easyui.css' />
+<script type="text/javascript" src="resources/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="resources/easyui/plugins/jquery.form.js"></script>
+<script type="text/javascript" src="resources/easyui/locale/easyui-lang-zh_CN.js"></script>
+<link rel='stylesheet' href='resources/easyui/themes/bootstrap/easyui.css' />
 <link rel='stylesheet' href='resources/easyui/themes/icon.css' />
 <link rel='stylesheet' href='resources/easyui/themes/color.css' />
-<script type="text/javascript"
-	src="resources/easyui/plugins/jquery.datagrid.js"></script>
+<script type="text/javascript" src="resources/easyui/plugins/jquery.datagrid.js"></script>
 <style type="text/css">
 html, body {
 	height: 100%;
@@ -70,8 +64,7 @@ html, body {
 	<!-- ===========左面区域开始=============== -->
 	<div data-options="region:'west'" title="功能列表" style="width: 200px;">
 
-		<div id="fatherAccordionDivId" class="easyui-accordion"
-			style="width: 99%;">
+		<div id="fatherAccordionDivId" class="easyui-accordion" style="width: 99%;">
 			<div class="accordionDivChildId" title="用户管理">添加用户</div>
 			<div class="accordionDivChildId" title="公告管理">添加公告</div>
 			<div class="accordionDivChildId" title="新闻管理">添加新闻</div>
@@ -106,6 +99,7 @@ html, body {
 				}
 			} ]
 		});
+
 	});
 </script>
 </html>
