@@ -83,7 +83,6 @@ html, body {
 	<div id="footerDiv" data-options="region:'south'">
 		<br>版权所有&copy;忘言科技有限公司
 	</div>
-
 	<!-- ===========底部区域结束=============== -->
 </body>
 
