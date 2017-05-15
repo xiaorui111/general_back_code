@@ -34,22 +34,31 @@ html, body {
 }
 
 #divTitleMenu {
-	background: yellow;
+	/* 	background: yellow; */
 	height: 38px;
 }
 
 #divTitleMenu  ul {
 	list-style: none;
 	margin: 0;
+	float: right;
+	color: white;
+	margin-right: 15px;
+	font-weight: bold;
 }
 
 #divTitleMenu  ul li {
-	float: right;
-	font-size: 14px;
-	margin-right: 10px;
-	border-right: 1px solid rgb(233, 233, 233);
+	float: left;
+	font-size: 13px;
+	margin-left: 10px;
 	cursor: pointer;
+	background-color: rgb(130, 192, 200);
+	border-radius: 3px;
 	padding: 10px;
+}
+
+#divTitleMenu  ul li:HOVER {
+	background-color: rgb(0, 129, 194);
 }
 
 #footerDiv {
@@ -94,9 +103,9 @@ html, body {
 		<div id="divTitleMenu">
 			<ul>
 				<li>用户管理</li>
-				<li>用户管理</li>
-				<li>用户管理</li>
-				<li>用户管理</li>
+				<li>公告管理</li>
+				<li>新闻管理</li>
+				<li>系统管理</li>
 			</ul>
 		</div>
 	</div>
