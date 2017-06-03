@@ -29,8 +29,9 @@ public class CommonInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
 		String requestUri = request.getRequestURI();
-
-		logger.info("requestUri==" + requestUri);
+		String contextPath = request.getContextPath();
+		String url = requestUri.substring(contextPath.length());
+		logger.info("url==" + url);
 
 		return true;
 	}

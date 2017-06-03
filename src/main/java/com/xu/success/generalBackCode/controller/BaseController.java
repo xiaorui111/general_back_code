@@ -13,9 +13,17 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * controller基类
+ * 
+ * @Description: TODO
+ *
+ * @author xuwei
+ *
+ * @date 2017年5月26日 上午10:29:56
+ */
 public class BaseController {
 
-	// map.put()相当于request.setAttribute方法。
 	public static final Map<String, Object> model = new ConcurrentHashMap<String, Object>();
 
 	protected static Logger logger = Logger.getLogger(BaseController.class);
@@ -42,8 +50,6 @@ public class BaseController {
 	}
 
 	/**
-	 * 
-	 * 
 	 * 获得参数值
 	 * 
 	 * @param param
@@ -55,8 +61,10 @@ public class BaseController {
 	}
 
 	/**
-	 * @Description: 组装模型 @param viewPath @param response @return
-	 * ModelAndView @throws
+	 * 组装模型
+	 * 
+	 * @param viewPath
+	 * @return
 	 */
 	protected ModelAndView view(String viewPath) {
 		response.setDateHeader("If-Modified-Since", System.currentTimeMillis());

@@ -23,7 +23,7 @@ import com.xu.success.generalBackCode.model.Users;
  * @date 2017年5月10日 下午5:18:12
  */
 @Controller
-// @RequestMapping("/test")
+@RequestMapping("/admin")
 public class IndexController extends BaseController {
 
 	@ResponseBody

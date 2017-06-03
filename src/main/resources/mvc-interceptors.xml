@@ -19,7 +19,8 @@
 	<mvc:interceptors>
 		<!-- 参数拦截器 -->
 		<mvc:interceptor>
-			<mvc:mapping path="/test/**" />
+			<mvc:mapping path="/admin/**" />
+			<mvc:exclude-mapping path="/notCheck/**"/>
 			<bean class="com.xu.success.generalBackCode.interceptor.CommonInterceptor"></bean>
 		</mvc:interceptor>
 

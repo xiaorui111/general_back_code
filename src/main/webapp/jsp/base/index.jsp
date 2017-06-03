@@ -4,14 +4,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>企业通用管理平台</title>
-<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="resources/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="resources/easyui/plugins/jquery.form.js"></script>
-<script type="text/javascript" src="resources/easyui/locale/easyui-lang-zh_CN.js"></script>
-<link rel='stylesheet' href='resources/easyui/themes/bootstrap/easyui.css' />
-<link rel='stylesheet' href='resources/easyui/themes/icon.css' />
-<link rel='stylesheet' href='resources/easyui/themes/color.css' />
-<script type="text/javascript" src="resources/easyui/plugins/jquery.datagrid.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/easyui/plugins/jquery.form.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/easyui/locale/easyui-lang-zh_CN.js"></script>
+<link rel='stylesheet' href='${pageContext.request.contextPath}/resources/easyui/themes/bootstrap/easyui.css' />
+<link rel='stylesheet' href='${pageContext.request.contextPath}/resources/easyui/themes/icon.css' />
+<link rel='stylesheet' href='${pageContext.request.contextPath}/resources/easyui/themes/color.css' />
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/easyui/plugins/jquery.datagrid.js"></script>
 <style type="text/css">
 html, body {
 	height: 100%;
@@ -20,7 +20,7 @@ html, body {
 }
 
 #northDiv {
-	background: url("resources/img/index_top_bg.gif");
+	background: url("${pageContext.request.contextPath}/resources/img/index_top_bg.gif");
 	height: 80px;
 }
 

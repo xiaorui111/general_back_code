@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -191,7 +190,7 @@ body {
 	<div class="whole">
 		<div class="header">
 			<div class="header_left">
-				<img class="logo" src="resources/img/logo1.png" alt="logo">
+				<img class="logo" src="resources/img/logo1.png" style="width: 261px; height: 48px" alt="logo">
 			</div>
 			<div class="header_right">
 				<ul>
@@ -213,8 +212,7 @@ body {
 						<div class="lbl_filed">
 							<div class="lbl_left">登录名</div>
 							<!-- 	<div class="lbl_right"></div> -->
-							<input name="loginName" type="text" class="textfiled"
-								id="loginName" placeholder="用户名" />
+							<input name="loginName" type="text" class="textfiled" id="loginName" placeholder="用户名" />
 						</div>
 					</div>
 					<!--密码框-->
@@ -222,20 +220,17 @@ body {
 						<div class="lbl_filed">
 							<div class="lbl_left">登录密码</div>
 							<!-- <div class="lbl_right"></div> -->
-							<input type="password" name="password" class="textfiled"
-								id="password" placeholder="登录密码" />
+							<input type="password" name="password" class="textfiled" id="password" placeholder="登录密码" />
 						</div>
 					</div>
 					<!--登陆按钮-->
-					<input class="btn_submit" style="cursor: pointer;" type="button"
-						onclick="login();" value="登录">
+					<input class="btn_submit" style="cursor: pointer;" type="button" onclick="login();" value="登录">
 				</div>
 			</div>
 		</div>
 		<div class="footer">
 			<div class="footer_href">
-				<a href="http://www.ruirui123.cn/" target="_blank">关于我们</a> <a
-					href="http://www.ruirui123.cn/">友情链接</a>
+				<a href="http://www.ruirui123.cn/" target="_blank">关于我们</a> <a href="http://www.ruirui123.cn/">友情链接</a>
 			</div>
 			<div class="copyright">2016-2020 &copy;忘言科技有限公司</div>
 		</div>
